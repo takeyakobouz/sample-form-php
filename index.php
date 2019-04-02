@@ -18,7 +18,7 @@
               $name = $_GET["name"];
               echo $name;
             }else{
-              echo "もしかして健太郎さんですか？"
+              echo "もしかして健太郎さんですか？";
             }
           ?>
        </a>さん！<p>
@@ -36,7 +36,7 @@
                $name = $_GET["name"];
                echo $name;
              }else{
-               echo "もしかして健太郎さんですか？"
+               echo "もしかして健太郎さんですか？";
              }
            ?>さんのマイページを見る
         </a></li>
@@ -54,7 +54,7 @@
            $name = $_GET["name"];
            echo $name;
          }else{
-           echo "もしかして健太郎さんですか？"
+           echo "もしかして健太郎さんですか？";
          }
        ?>
     </a></p>
