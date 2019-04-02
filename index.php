@@ -14,8 +14,12 @@
       <p class="wellcome_text">ようこそ
         <a href="#"  class="succes!">
           <?php
-           $name = $_GET["name"];
-           echo $name;
+            if (isset($_GET["name"])){
+              $name = $_GET["name"];
+              echo $name;
+            }else{
+              echo "もしかして健太郎さんですか？"
+            }
           ?>
        </a>さん！<p>
     <form action ="index.php" method="get">
@@ -28,9 +32,13 @@
        <ul>
          <li><a href="#"  class="succes!">
            <?php
-              $name = $_GET["name"];
-              echo $name;
-          ?>さんのマイページを見る
+             if (isset($_GET["name"])){
+               $name = $_GET["name"];
+               echo $name;
+             }else{
+               echo "もしかして健太郎さんですか？"
+             }
+           ?>さんのマイページを見る
         </a></li>
          <li><a href="#">NEWS</a></li>
          <li><a href="#">BLOG</a></li>
@@ -42,9 +50,13 @@
      </p>
      <p>copyright <a href="#"  class="succes!">
        <?php
-          $name = $_GET["name"];
-          echo $name;
-      ?>
+         if (isset($_GET["name"])){
+           $name = $_GET["name"];
+           echo $name;
+         }else{
+           echo "もしかして健太郎さんですか？"
+         }
+       ?>
     </a></p>
    </footer>
     <?php
