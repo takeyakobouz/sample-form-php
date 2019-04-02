@@ -1,0 +1,37 @@
+
+*{
+  text-align: center;
+  }
+html{
+  padding: 0;
+}
+wrapper{
+  height: 100vh;
+  width:100vh;
+}
+
+h1{
+  font-size: 100px;
+  padding:0;
+  margin:0;
+}
+.succes{
+  color: red;
+}
+ul{
+  list-style: none;
+}
+li{
+  margin-left: -40px;
+}
+header{
+  background:#ddd url(covergazou.jpg) no-repeat center center;
+  background-size:cover;
+
+}
+.wellcome_text{
+  margin-top:20px;
+}
+a:hoer{
+  border-bottom: none;
+}
