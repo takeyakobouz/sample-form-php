@@ -14,16 +14,17 @@
       <p class="wellcome_text">ようこそ
         <a href="#"  class="succes!">
           <?php
-            if (isset($_GET["name"])){
+            if ($_GET["name"]){
               $name = $_GET["name"];
               echo $name;
             }else{
-              echo "もしかして健太郎さんですか？";
+              echo "no read";
             }
+
           ?>
        </a>さん！<p>
     <form action ="index.php" method="get">
-     <input type="text" name ="name" value=""><br/>
+     <input type="text" name ="name" placeholder="名前を入力" ><br/>
      <input type="submit" value="send">
     </p>
     </section>
@@ -32,13 +33,14 @@
        <ul>
          <li><a href="#"  class="succes!">
            <?php
-             if (isset($_GET["name"])){
-               $name = $_GET["name"];
-               echo $name;
-             }else{
-               echo "もしかして健太郎さんですか？";
-             }
-           ?>さんのマイページを見る
+            if ($_GET["name"]){
+              $name = $_GET["name"];
+              echo $name;
+            }else{
+              echo "no read";
+            }
+
+          ?>さんのマイページを見る
         </a></li>
          <li><a href="#">NEWS</a></li>
          <li><a href="#">BLOG</a></li>
@@ -50,13 +52,14 @@
      </p>
      <p>copyright <a href="#"  class="succes!">
        <?php
-         if (isset($_GET["name"])){
-           $name = $_GET["name"];
-           echo $name;
-         }else{
-           echo "もしかして健太郎さんですか？";
-         }
-       ?>
+            if ($_GET["name"]){
+              $name = $_GET["name"];
+              echo $name;
+            }else{
+              echo "no read";
+            }
+
+          ?>
     </a></p>
    </footer>
     <?php
